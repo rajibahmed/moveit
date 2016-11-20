@@ -18,5 +18,5 @@ This command will create all the necessary containers and open the web browser.
  $ ./setup
 ```
 
-Application should running on localhost:3000 if you are using latest docker.
+Application should running on [http://localhost:8080]((http://localhost:8080) if you are using latest docker.
 Or you need to access it through your docker-machine's ip.
