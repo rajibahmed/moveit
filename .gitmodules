@@ -1,0 +1,3 @@
+[submodule "moveit-ui"]
+	path = moveit-ui
+	url = git@github.com:rajibahmed/moveit-ui.git
