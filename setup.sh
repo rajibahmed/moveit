@@ -12,7 +12,10 @@ if ! type docker-compose > /dev/null; then
   exit 1
 fi
 
-cd moveit-ui && npm run build && cd ..
+git submodule init
+git submodule update 
+
+cd moveit-ui && npm install && npm run build && cd ..
 
 docker-compose up -d
 
