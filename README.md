@@ -17,3 +17,6 @@ This command will create all the necessary containers and open the web browser.
 ```sh
  $ ./setup
 ```
+
+Application should running on localhost:3000 if you are using latest docker.
+Or you need to access it through your docker-machine's ip.
