@@ -16,8 +16,23 @@ Setup:
 This command will create all the necessary containers and open the web browser.
 
 ```sh
- $ ./setup
+ $ ./setup 
+```
+
+For running the already created containers
+
+```sh
+docker-compose up
 ```
 
 Application should running on [http://localhost:8080](http://localhost:8080) if you are using latest docker.
 Or you need to access it through your docker-machine's ip.
+
+## Troubleshooting
+
+Removing all moveit container 
+
+``sh
+$ docker stop $(docker ps -aq)
+$ docker rmi -f  $(docker images | grep moveit | awk '{print $3}')
+``
