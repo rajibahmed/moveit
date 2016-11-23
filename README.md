@@ -35,4 +35,5 @@ Removing all moveit container
 ```sh
 $ docker stop $(docker ps -aq)
 $ docker rmi -f  $(docker images | grep moveit | awk '{print $3}')
+$ docker volume rm $(docker volume ls -qf dangling=true)
 ```
