@@ -3,6 +3,25 @@
 This project has two submodules that will installed and run as container. 
 The move-it api is written with RubyOnRails, and moveit-ui is written with VueJs.
 
+### WithOut docker 
+
+Just pull the latest code for moveit-api and moveit-ui
+
+on moveit-ui directory
+
+```sh
+npm install && npm run dev
+```
+
+on move-api directory
+
+```sh
+bundle install
+rake db:migrate 
+rails s 
+```
+
+### With docker 
 Required:
 
  * Docker latest
