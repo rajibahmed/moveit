@@ -32,7 +32,7 @@ Or you need to access it through your docker-machine's ip.
 
 Removing all moveit container 
 
-``sh
+```sh
 $ docker stop $(docker ps -aq)
 $ docker rmi -f  $(docker images | grep moveit | awk '{print $3}')
-``
+```
