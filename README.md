@@ -5,8 +5,9 @@ The move-it api is written with RubyOnRails, and moveit-ui is written with VueJs
 
 Required:
 
- * Docker
- * NodeJs
+ * Docker latest
+ * NodeJs latest
+ * unsed port 3000 and 8080
 
 #### Tested on OSX 
 

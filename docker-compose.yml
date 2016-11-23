@@ -7,7 +7,7 @@ services:
     volumes:
       - ./moveit-ui/dist:/usr/share/nginx/html
     ports:
-      - "9000:80"
+      - "8080:80"
 
   api:
     build: ./moveit-api/
