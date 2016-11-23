@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm -rf moveit-api/tmp/*
-
 if ! type -p node > /dev/null; then
   echo "Please install nodejs" 
   exit 1
@@ -16,6 +14,8 @@ git submodule init
 git submodule update 
 
 cd moveit-ui && npm install && npm run build && cd ..
+
+rm -rf moveit-api/tmp/*
 
 docker-compose up -d
 

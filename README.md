@@ -22,7 +22,7 @@ This command will create all the necessary containers and open the web browser.
 For running the already created containers
 
 ```sh
-docker-compose up
+$ rm -rf moveit-api/tmp && docker-composer up 
 ```
 
 Application should running on [http://localhost:8080](http://localhost:8080) if you are using latest docker.
@@ -30,6 +30,14 @@ Or you need to access it through your docker-machine's ip.
 
 ## Troubleshooting
 
+You may find sometimes the setup script is not working
+Throwing errors unable to create api and ui container.
+
+Temp solution
+
+```sh
+$ rm -rf moveit-api/tmp && docker-composer up api ui
+```
 Removing all moveit container 
 
 ```sh
